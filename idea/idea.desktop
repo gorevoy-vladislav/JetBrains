@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=IDEA
+Comment=IntelliJ IDEA
+Exec=/opt/IDEA/bin/idea.sh %U
+Terminal=false
+Type=Application
+Icon=/opt/IDEA/bin/idea.png
+Categories=Development;IDE;

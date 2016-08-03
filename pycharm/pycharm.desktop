@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PyCharm
+Comment=PyCharm IDE
+Exec=/opt/PyCharm/bin/pycharm.sh %U
+Terminal=false
+Type=Application
+Icon=/opt/PyCharm/bin/pycharm.png
+Categories=Development;IDE;

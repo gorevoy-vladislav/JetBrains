@@ -1,0 +1,16 @@
+*.build
+build-stamp
+*.changes
+*.deb
+*.tar.gz
+changelog
+files
+*.debhelper.log
+*.substvars
+/*/debian/clion/*
+/*/debian/datagrip/*
+/*/debian/idea/*
+/*/debian/phpstorm/*
+/*/debian/pycharm/*
+/*/debian/rubymine/*
+/*/debian/webstorm/*

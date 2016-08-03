@@ -1,0 +1,52 @@
+#!/usr/bin/make -f
+
+DEBVERS := $(shell dpkg-parsechangelog | sed -n -e 's/^Version: //p')
+VERSION := $(shell echo '$(DEBVERS)' | sed -e 's/^[[:digit:]]*://' -e 's/[~-].*//')
+
+BUILD=$(shell tar -tzf CLion-$(VERSION).tar.gz | head -n 1 | cut -d/ -f1)
+
+build: build-stamp
+build-stamp:
+	touch $@
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+
+	# Untar and move upstream version
+	tar --directory $(CURDIR)/debian/clion/opt -xzf CLion-$(VERSION).tar.gz
+	mv $(CURDIR)/debian/clion/opt/$(BUILD) $(CURDIR)/debian/clion/opt/CLion
+
+	# Create desktop item for menu
+	cp clion.desktop $(CURDIR)/debian/clion/usr/share/applications
+
+	# Create symlink in /usr/bin
+	dh_link opt/CLion/bin/clion.sh usr/bin/clion
+
+	# Create gconf defaults for pbfile:// urls
+	cp clion.schemas $(CURDIR)/debian/clion/usr/share/gconf/schemas
+
+
+binary-indep: build install
+	dh_testdir -i
+	dh_testroot -i
+	dh_installdocs -i
+	dh_install -i
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_gencontrol -i
+	dh_md5sums -i
+	dh_builddeb -i
+
+binary-arch: build install
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=CLion
+Comment=CLion IDE
+Exec=/opt/CLion/bin/clion.sh %U
+Terminal=false
+Type=Application
+Icon=/opt/CLion/bin/clion.svg
+Categories=Development;IDE;

@@ -1,0 +1,16 @@
+Source: phpstorm
+Section: vcs
+Priority: optional
+Maintainer: Vladislav Gorevoy <vladislavgorevoy@gmail.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.8.4
+Homepage: http://www.jetbrains.com/phpstorm/
+
+Package: phpstorm
+Architecture: all
+Depends: openjdk-7-jre | oracle-java7-installer | oracle-java8-installer | oracle-java6-installer | sun-java7-jdk | sun-java8-jdk | sun-java6-jdk, libxcursor1, libxfixes3, libxi6, libxrender1, libxtst6
+Recommends: fonts-dejavu-core, fonts-freefont-otf, ttf-bitstream-vera, fonts-cantarell, fonts-droid-fallback, ttf-mscorefonts-installer
+Description: PhpStorm is a PHP IDE that actually 'gets' your code.
+ It supports PHP 5.3/5.4/5.5/5.6/7.0, provides on-the-fly error prevention,
+ best autocompletion & code refactoring, zero configuration debugging,
+ and an extended HTML, CSS, and JavaScript editor.

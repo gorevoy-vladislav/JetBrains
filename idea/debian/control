@@ -1,0 +1,18 @@
+Source: idea
+Section: vcs
+Priority: optional
+Maintainer: Vladislav Gorevoy <vladislavgorevoy@gmail.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.8.4
+Homepage: http://www.jetbrains.com/idea/
+
+Package: idea
+Architecture: all
+Depends: openjdk-7-jre | oracle-java7-installer | oracle-java8-installer | oracle-java6-installer | sun-java7-jdk | sun-java8-jdk | sun-java6-jdk, libxcursor1, libxfixes3, libxi6, libxrender1, libxtst6
+Recommends: fonts-dejavu-core, fonts-freefont-otf, ttf-bitstream-vera, fonts-cantarell, fonts-droid-fallback, ttf-mscorefonts-installer
+Description: IntelliJ IDEA analyzes your code,
+ looking for connections between symbols across all
+ project files and languages. Using this information
+ it provides indepth coding assistance, quick
+ navigation, clever error analysis, and,
+ of course, refactorings.

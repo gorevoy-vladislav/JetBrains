@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DataGrip
+Comment=DataGrip IDE
+Exec=/opt/DataGrip/bin/datagrip.sh %U
+Terminal=false
+Type=Application
+Icon=/opt/DataGrip/bin/product.png
+Categories=Development;IDE;

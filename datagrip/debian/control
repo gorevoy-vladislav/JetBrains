@@ -1,0 +1,18 @@
+Source: datagrip
+Section: vcs
+Priority: optional
+Maintainer: Vladislav Gorevoy <vladislavgorevoy@gmail.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.8.4
+Homepage: http://www.jetbrains.com/datagrip/
+
+Package: datagrip
+Architecture: all
+Depends: openjdk-7-jre | oracle-java7-installer | oracle-java8-installer | oracle-java6-installer | sun-java7-jdk | sun-java8-jdk | sun-java6-jdk, libxcursor1, libxfixes3, libxi6, libxrender1, libxtst6
+Recommends: fonts-dejavu-core, fonts-freefont-otf, ttf-bitstream-vera, fonts-cantarell, fonts-droid-fallback, ttf-mscorefonts-installer
+Description: DataGrip is the multi-engine database environment.
+ We support MySQL, PostgreSQL, Microsoft SQL Server, Oracle, Sybase,
+ DB2, SQLite, HyperSQL, Apache Derby and H2. If the DBMS has a JDBC
+ driver you can connect to it via DataGrip.
+ For any of supported engines it provides database introspection and
+ various instruments for creating and modifying objects.

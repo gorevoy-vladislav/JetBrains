@@ -1,0 +1,20 @@
+Source: rubymine
+Section: vcs
+Priority: optional
+Maintainer: Vladislav Gorevoy <vladislavgorevoy@gmail.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.8.4
+Homepage: http://www.jetbrains.com/ruby/
+
+Package: rubymine
+Architecture: all
+Depends: openjdk-7-jre | oracle-java7-installer | oracle-java8-installer | oracle-java6-installer | sun-java7-jdk | sun-java8-jdk | sun-java6-jdk, libxcursor1, libxfixes3, libxi6, libxrender1, libxtst6
+Recommends: fonts-dejavu-core, fonts-freefont-otf, ttf-bitstream-vera, fonts-cantarell, fonts-droid-fallback, ttf-mscorefonts-installer
+Description: RubyMine IDE includes a comprehensive Ruby
+ code editor aware of dynamic language specifics.
+ It provides smart coding assistance, intelligent code
+ refactoring, and deep code analysis capabilities.
+ With easy project configuration, automatic Ruby Gems
+ management, Rake support, and built-in consoles,
+ it has everything a Ruby developer needs
+ in a development environment.

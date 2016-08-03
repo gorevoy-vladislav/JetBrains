@@ -1,0 +1,16 @@
+Source: webstorm
+Section: vcs
+Priority: optional
+Maintainer: Vladislav Gorevoy <vladislavgorevoy@gmail.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.8.4
+Homepage: http://www.jetbrains.com/webstorm/
+
+Package: webstorm
+Architecture: all
+Depends: openjdk-7-jre | oracle-java7-installer | oracle-java8-installer | oracle-java6-installer | sun-java7-jdk | sun-java8-jdk | sun-java6-jdk, libxcursor1, libxfixes3, libxi6, libxrender1, libxtst6
+Recommends: fonts-dejavu-core, fonts-freefont-otf, ttf-bitstream-vera, fonts-cantarell, fonts-droid-fallback, ttf-mscorefonts-installer
+Description: WebStorm is the smartest JavaScript IDE.
+ Lightweight yet powerful IDE, perfectly equipped for
+ complex client-side development and server-side
+ development with Node.js.

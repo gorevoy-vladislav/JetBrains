@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RubyMine
+Comment=RubyMine IDE
+Exec=/opt/RubyMine/bin/rubymine.sh %U
+Terminal=false
+Type=Application
+Icon=/opt/RubyMine/bin/rubymine.png
+Categories=Development;IDE;
