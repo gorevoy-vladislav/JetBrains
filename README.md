@@ -18,8 +18,11 @@ sudo apt-get install devscripts debhelper
 
 1)   Download the `.tar.gz` file from JetBrains download page and place it in
 the ide-named directory of this repo;
+
 2)   Run terminal in the root of this repo;
+
 3)   Create a new debian/changelog file using the provided update.sh script;
+
 4)   Build the package (CLion for example).
 
 ```sh
