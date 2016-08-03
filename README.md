@@ -1,10 +1,10 @@
 #JetBrains products debianizer
 
-###Original idea by Casper Langemeijer
+####Original idea by Casper Langemeijer
 
 <https://github.com/langemeijer/phpstorm-deb.git>
 
-###Changed by Vladislav Gorevoy
+####Changed by Vladislav Gorevoy
 
 <https://github.com/gorevoy-vladislav>
 
