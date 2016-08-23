@@ -27,7 +27,7 @@ the ide-named directory of this repo;
 
 ```sh
 cd ./clion
-sh ./update.sh
+./update.sh
 debuild -us -uc -b
 ```
 
