@@ -4,5 +4,5 @@ Comment=CLion IDE
 Exec=/opt/CLion/bin/clion.sh %U
 Terminal=false
 Type=Application
-Icon=/opt/CLion/bin/clion.svg
+Icon=/opt/CLion/bin/clion.png
 Categories=Development;IDE;

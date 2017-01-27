@@ -4,5 +4,5 @@ Comment=WebStorm IDE
 Exec=/opt/WebStorm/bin/webstorm.sh %U
 Terminal=false
 Type=Application
-Icon=/opt/WebStorm/bin/webstorm.svg
+Icon=/opt/WebStorm/bin/webstorm.png
 Categories=Development;IDE;
